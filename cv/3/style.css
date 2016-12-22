@@ -1,0 +1,2612 @@
+/*--------------------------------------------------------------
+  WELCOME SECION
+--------------------------------------------------------------*/
+.larsia-welcome-content {
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 350px;
+  max-width: 100%;
+  z-index: 4;
+}
+.larsia-first-welcome-text {
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+}
+.welcome-full {
+  background-image: url("images/welcome-bg-8.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  position: relative;
+}
+.first_welcome_text {
+  color: #fff;
+  font-size: 3em;
+  font-weight: 100;
+  font-family: inherit;
+  visibility: hidden;
+}
+.larsia-welcome-content::before {
+  background-image: url("images/anonymous.png");
+  background-position: center center;
+  background-size: auto 100%;
+  content: "";
+  display: block;
+  height: 100%;
+  left: -89px;
+  background-repeat: no-repeat;
+  top: 0;
+  position: absolute;
+  width: 148px;
+  opacity: 0;
+}
+.larsia-welcome-content::after {
+  background-color: #fff;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  right: 50px;
+  top: 2px;
+  opacity: 0;
+  width: 1px;
+}
+.larsia-welcome-content {
+ color: #ffffff;
+ z-index: 3;
+}
+.larsia-welcome-content.animateBefore::before {
+  opacity: 1;
+  -webkit-animation-name: rollIn;
+  -webkit-animation-duration: 0.9s;
+  -webkit-animation-delay: 0s;
+  animation-name: rollIn;
+  animation-duration: 0.9s;
+  animation-delay: 0s;
+}
+.larsia-welcome-content.animateAfter::after {
+  opacity: 1;
+  -webkit-animation-name: bounceIn;
+  -webkit-animation-duration: 0.9s;
+  -webkit-animation-delay: 0s;
+  animation-name: bounceIn;
+  animation-duration: 0.9s;
+  animation-delay: 0s;
+}
+
+.larsia-welcome-content h2,
+.larsia-welcome-content h3,
+.larsia-welcome-content h4 {
+  font-family: 'Fredericka the Great';
+  margin: 0;
+  text-transform: uppercase;
+  line-height: .9;
+} 
+.larsia-welcome-content p {
+  line-height: 1;
+  margin: 4px 0;
+  text-transform: uppercase;
+}
+
+.slideText {
+  opacity: 0;
+}
+@keyframes scroll-down-infinit {
+  0% {
+      bottom: 10px;
+  }
+  50% {
+      bottom: 18px;
+  }
+  100% {
+      bottom: 10px;
+  }
+}
+@-webkit-keyframes scroll-down-infinit {
+  0% {
+      bottom: 10px;
+  }
+  50% {
+      bottom: 18px;
+  }
+  100% {
+      bottom: 10px;
+  }
+}
+.start_browsing {
+  bottom: 4px;
+  color: #fff;
+  font-size: 2.2em;
+  left: 50%;
+  margin-left: -12px;
+  z-index: 2;
+  opacity: 0;
+  position: absolute;
+  animation: 1s ease 0s normal none infinite running scroll-down-infinit;
+  -webkit-animation: 1s ease 0s normal none infinite running scroll-down-infinit;
+}
+.start_browsing:hover {
+  color: #FFFFFF;
+}
+.colorBtn.start_browsing,
+.colorBtn.start_browsing:hover {
+  color: inherit;
+}
+.opacityIn,
+.visibleDefault,
+.visibleDefault::before,
+.visibleDefault::after {
+  opacity: 1 !important;
+}
+.welcome-style-section {
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+}
+.style-inner-content h3 {
+  display: inline-block;
+  font-weight: 100;
+  padding: 11px 0;
+  margin-top: 14px;
+  text-transform: uppercase;
+}
+.style-inner-content h2 {
+  font-size: 5em;
+  margin: 15px 0 0;
+  text-transform: uppercase;
+}
+.style-inner-content ul {
+  margin-top: 35px;
+  width: 100%;
+}
+.style-inner-content ul li {
+  display: inline-block;
+  margin: 0 5px;
+  text-align: center;
+}
+.welcome-pattern {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+.style-inner-content > p {
+  font-size: 17px;
+  margin: 31px auto 45px;
+  width: 50%;
+}
+.style-inner-content .follow-me-social-links a {
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid;
+  height: 70px;
+  line-height: 70px;
+  width: 70px;
+}
+.style-inner-content .follow-me-social-links {
+  margin-bottom: 45px;
+}
+.style-tenth-content.style-inner-content h3 {
+  background-color: #000;
+  padding: 11px 20px;
+}
+.style-tenth-content.style-inner-content h2 {
+  font-weight: 700;
+}
+.welcome-style-section .btn-text {
+  width: 170px;
+}
+.style-third-content.style-inner-content {
+  text-align: left;
+}
+.larsia-style-3 .welcome-style-section {
+  color: inherit;
+}
+.style-fourth-content.style-inner-content h2 {
+  font-size: 4em;
+  line-height: 1;
+  margin: 0;
+  text-transform: none;
+  font-weight: 700;
+}
+.style-fifth-content.style-inner-content h3 {
+  border: 1px solid;
+  line-height: 1;
+  padding: 11px 15px;
+}
+.larsia-style-5 .start_browsing {
+  color: #FFFFFF;
+}
+.style-sixth-content.style-inner-content h4 {
+  background-color: #292c34;
+  display: inline-block;
+  color: #FFFFFF;
+  padding: 11px 15px;
+}
+.style-sixth-content.style-inner-content h2 {
+  color: #fff;
+  font-weight: 700;
+  line-height: 0.8;
+  margin: 0 0 20px;
+  text-shadow: 0 0px 4px #292c34;
+}
+.larsia-style-6 .welcome-style-section {
+  color: inherit;
+}
+.style-seventh-content.style-inner-content h3 {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  padding: 8px 0;
+}
+.style-seventh-content.style-inner-content h2 {
+  font-size: 5em;
+  font-weight: 700;
+  letter-spacing: 21px;
+  margin: 10px 0 0;
+}
+.larsia-style-7 .start_browsing {
+  color: #FFFFFF;
+}
+.style-second-content.style-inner-content h3 {
+  display: inline-block;
+  font-family: inherit;
+  font-weight: 100;
+  margin: 0;
+  padding: 11px 0;
+  text-transform: none;
+}
+.style-second-content.style-inner-content h2 {
+  font-size: 5em;
+  font-weight: 700;
+  margin: 2px 0 0;
+  text-transform: uppercase;
+}
+.larsia-style-2 .welcome-style-section {
+  color: inherit;
+}
+.larsia-style-2 .welcome-pattern {
+  display: none;
+}
+.welcome-img img {
+  width: auto;
+}
+.welcome-img-bg-pattern {
+  background-color: #f4f4f4;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  z-index: 1;
+}
+.welcome-table-cell {
+  z-index: 2;
+  padding-left: 45px;
+}
+.welcome-img {
+  padding-top: 50px;
+}
+.style-first-content.style-inner-content h2 {
+  font-size: 5em;
+  font-weight: 700;
+  line-height: 0.8;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+
+
+/*--------------------------------------------------------------
+  MAIN MENU
+--------------------------------------------------------------*/
+.larsia-main-menu {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.larsia-menu-area {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.menuHide .larsia-menu-area {
+  position: absolute;
+  top: -86px;
+  width: 100%;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.larsia-menu-area {
+  background-color: #000;
+}
+.larsia-main-menu.fixedMenu .larsia-menu-area {
+  top: 0;
+}
+
+.main-logo {
+  float: left;
+  width: 6%;
+}
+.main-logo a {
+  background-image: url("images/logo.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  display: block;
+  height: 49px;
+  width: 100%;
+  margin-top: 10px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.larsia-menu-area nav {
+  float: right;
+  text-align: right;
+  width: 85%;
+}
+.larsia-menu-area nav ul li {
+  display: inline-block;
+}
+.larsia-menu-area nav ul li a {
+  display: block;
+  font-size: 13px;
+  line-height: 1;
+  padding: 28px 12px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.larsia-main-menu.fixedMenu {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99998;
+}
+.larsia-main-menu.fixedMenu .main-logo a {
+  width: 100%;
+  margin-top: 5px;
+}
+.larsia-main-menu.fixedMenu .larsia-menu-area nav ul li a {
+  padding: 22px 12px;
+  font-size: 13px;
+}
+.larsia-menu-area nav ul li a:hover,
+.larsia-menu-area nav ul li.active-menu a {
+  background-color: rgba(255,255,255,0.1);
+}
+.menu_responsive_init {
+  background-color: rgba(0,0,0,.4);
+  background-image: url('images/navigation.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  display: none;
+  float: right;
+  height: 42px;
+  margin-right: 0;
+  margin-top: 16px;
+  width: 42px;
+}
+
+
+
+/*--------------------------------------------------------------
+  ABOUT ME
+--------------------------------------------------------------*/
+.about-section-content {
+  margin-top: 0;
+}
+#larsia-section-about .single-larsia-section-heading {
+  padding-top: 110px;
+  display: none;
+}
+.larsia-single-column.about-me-desc {
+  padding-top: 60px;
+  background-color: #f4f4f4;
+  position: relative;
+}
+.larsia-single-column.about-me-desc .container {
+  position: relative;
+  z-index: 2;
+}
+.about-pattern {
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 50%;
+  z-index: 1;
+  background-color: #FFF;
+}
+.larsia-style-1 .about-pattern {
+  left: inherit;
+  right: 0;
+}
+.about-me-content > img {
+  display: inline-block;
+  width: auto;
+}
+.about-me-content > h2 {
+  font-family: inherit;
+  font-size: 2.5em;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 19px;
+  text-transform: uppercase;
+}
+.about-me-in-details > p {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+.about-me-in-details {
+  margin: auto;
+  width: 65%;
+  position: relative;
+}
+.about-me-in-details::before {
+  background-color: #cccccc;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  margin-left: -50px;
+  position: absolute;
+  top: -17px;
+  width: 100px;
+}
+.hire-me-or-resume-download li {
+  display: inline-block;
+}
+.hire-me-or-resume-download {
+  margin-top: 25px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.larsia-interest-in-container h2 {
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+.larsia-interest-in-container {
+  margin: 46px auto auto;
+  text-align: center;
+  width: 100%;
+}
+.larsia-interest-in-section {
+  background-color: #272822;
+  color: #FFFFFF;
+}
+.larsia-interest-in-section .owl-item {
+  background-color: #3A3A3A;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.larsia-interest-in-section .owl-item:nth-child(2),
+.larsia-interest-in-section .owl-item:nth-child(4),
+.larsia-interest-in-section .owl-item:nth-child(6),
+.larsia-interest-in-section .owl-item:nth-child(8),
+.larsia-interest-in-section .owl-item:nth-child(10) {
+  background-color: transparent;
+}
+.larsia-single-column.larsia-interest-in {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  z-index: 3;
+}
+.single-larsia-interest-in i {
+  font-size: 2.5em;
+  line-height: 1;
+}
+.single-larsia-interest-in {
+  background-color: transparent;
+  margin: 0 6px;
+  padding: 19px 0;
+  cursor: w-resize;
+}
+.about-descrtioption-right > h2 {
+  border-radius: 2px;
+  display: block;
+  font-size: 2.2em;
+  font-weight: bold;
+}
+.about-descrtioption-right h2 span {
+  display: block;
+  font-size: 16px;
+  font-weight: 100;
+  margin-top: 5px;
+}
+.about-thumb-left > img {
+  width: auto;
+  max-width: inherit; 
+}
+.about-descrtioption-right {
+  margin-top: 30px;
+  text-align: left;
+  padding-left: 20px;
+  margin-bottom: 90px;
+}
+.about-descrtioption-right > p {
+  line-height: 1.6;
+  margin-top: 25px;
+}
+.about-descrtioption-right > img {
+  margin-top: 30px;
+  width: auto;
+  margin-bottom: 15px;
+}
+.hire-me-or-resume-download .larsia-btn {
+  text-align: center;
+}
+.extra-about-me-content .container {
+  position: relative;
+}
+.extra-about-content {
+  width: 65%;
+  margin: auto;
+}
+.extra-about-me-content {
+  margin: 85px 0;
+  text-align: center;
+}
+.extra-about-content h3 {
+  font-family: inherit;
+  font-weight: 100;
+}
+.extra-about-content > h2 {
+  margin-bottom: 55px;
+  margin-top: 12px;
+  position: relative;
+}
+.extra-about-content > h2::before {
+  background-color: #333;
+  bottom: -25px;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  margin-left: -40px;
+  position: absolute;
+  width: 80px;
+}
+.extra-about-content > p {
+  margin-bottom: 25px;
+  display: block;
+}
+.extra-about-content a.larsia-btn {
+  margin-top: 20px;
+}
+.extra-about-icon i {
+  font-size: 20em;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  color: rgba(0,0,0,0.2);
+}
+/*--------------------------------------------------------------
+  EXPERTISE SKILL
+--------------------------------------------------------------*/
+.resume-section-title .larsia-heading-left::before {
+  display: none;
+}
+.resume-section-title .larsia-heading-left i {
+
+}
+.resume-section-title .larsia-heading-left {
+  width: 100%;
+  margin-right: 0;
+}
+.resume-section-title .larsia-heading-left i {
+  left: -25px;
+  top: -80px;
+}
+.resume-section-title .larsia-heading-left::after {
+  height: 850px;
+}
+.all-skills-bar-area {
+  float: left;
+  width: 80%;
+}
+.customNavigation {
+  width: 20%;
+  float: right;
+}
+.resume-body {
+  position: relative;
+}
+.skill-btn {
+  background: none repeat scroll 0 0 #e91e63;
+  border-radius: 2px;
+  color: #fff;
+  display: inline-block;
+  font-size: 3em;
+  line-height: 1;
+  margin: 5px;
+  padding: 3px 23px 6px;
+  transition: all 0.2s cubic-bezier(0, 0, 0.58, 1) 0s;
+  -webkit-transition: all 0.2s cubic-bezier(0, 0, 0.58, 1) 0s;
+}
+.customNavigation {
+  bottom: 46px;
+  position: absolute;
+  right: 38px;
+  text-align: right;
+}
+.skill-candle-bar {
+  text-align: center;
+}
+.skill-btn:hover,
+.skill-btn:focus,
+.skill-btn:active {
+  background-color: #e91e63;
+  color: #FFFFFF;
+  opacity: 0.85;
+}
+.skill-content-section {
+  background-color: #f4f4f4;
+}
+.single-skill-candle {
+  display: inline-block;
+  height: 360px;
+  margin-bottom: 45px;
+  position: relative;
+  width: 54px;
+  margin-top: 100px;
+}
+.skill-container {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.skill-container .skill-title {
+  bottom: 0;
+  display: block;
+  font-size: 0.8em;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+.skill-percentage-body {
+  background-color: #e91e63;
+  bottom: 0;
+  height: 0%;
+  position: absolute;
+  width: 100%;
+}
+.skill-percentage {
+  bottom: -30px;
+  display: block;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+.top-pointer {
+  width: 8px;
+  height: 8px;
+  display: block;
+  background-color: #e91e63;
+  margin: auto;
+  border-radius: 50%;
+}
+.pointer-body {
+  background-color: #e91e63;
+  display: block;
+  height: 55px;
+  margin: auto;
+  width: 1px;
+}
+.expertise-skill-area .resume-section-title .larsia-heading-left i {
+  left: 6px;
+  z-index: 0;
+  color: rgba(0,0,0,0.3);
+}
+
+.expertise-skill-area .resume-section-title .larsia-heading-left::after {
+  display: none;
+}
+.single-resume-candle-section {
+  position: relative;
+}
+.heading-para {
+  margin-top: 50px;
+  text-align: left;
+  width: 90%;
+  padding-left: 2%;
+}
+.larsia-single-column.single-skills-column {
+  overflow: inherit;
+}
+.expertise-skill-area {
+  position: relative;
+  padding: 50px 0 35px;
+}
+.skill-thumb-area {
+  height: 100%;
+  right: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 50%;
+  z-index: 1;
+}
+.skill-content-body {
+  position: relative;
+  z-index: 2;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+.skill-thumb-area > span {
+  background-color: rgba(255, 255, 255, 0.9);
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+.skill-thumb-area > img {
+  position: absolute;
+  z-index: 1;
+}
+.skill-content-body h3 {
+  font-family: inherit;
+  font-weight: 100;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.skill-content-body h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.skill-content-body h4 {
+  margin-top: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.skill-content-body li {
+  display: inline-block;
+}
+.skill-content-body li a {
+  background-color: #f4f4f4;
+  display: block;
+  margin: 10px 4px;
+  padding: 15px 0;
+  color: inherit;
+  text-align: center;
+  width: 58px;
+  position: relative;
+}
+.skill-content-body li:first-child a{
+  margin-left: 0;
+}
+.skill-content-body li a::before {
+  background: none repeat scroll 0 0 #e91e63;
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: scale(0);
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+  -webkit-transform: scale(0);
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  z-index: 0;
+}
+.skill-content-body li a:hover {
+  color: #fff;
+}
+.skill-content-body li a:hover::before {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+}
+
+
+/*--------------------------------------------------------------
+  WORK EXPRIENCE
+--------------------------------------------------------------*/
+.resume-candle-icon {
+  background-color: #fff;
+  border: 1px solid;
+  border-radius: 50%;
+  display: table;
+  height: 60px;
+  left: -28px;
+  position: absolute;
+  text-align: center;
+  top: -30px;
+  width: 60px;
+  z-index: 3;
+}
+.resume-cande-top {
+  height: 140px;
+  position: relative;
+  padding-left: 15px;
+}
+.resume-cande-top > span {
+  bottom: 39px;
+  left: -16px;
+  position: absolute;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.resume-cande-bottom {
+  padding-left: 15px;
+}
+.resume-cande-top::before {
+  border-bottom: 1px dashed;
+  content: "";
+  display: block;
+  left: -40px;
+  margin-top: -0.5px;
+  position: absolute;
+  bottom: 0;
+  width: 135%;
+}
+.single-resume-expreience::after {
+  background-color: #000;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 40px;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
+.single-resume-expreience {
+  float: left;
+  padding-left: 40px;
+  position: relative;
+  padding-top: 30px;
+}
+.resume-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+.resume-cande-bottom > h2 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 6px;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+.resume-cande-bottom > h4 {
+  font-size: 0.7em;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.resume-candle-icon i {
+  font-size: 1.5em;
+}
+.resume-cande-bottom > p {
+  font-size: 0.8em;
+  line-height: 1.6;
+}
+.resume-cande-bottom {
+  padding-top: 15px;
+  position: relative;
+}
+.resume-cande-bottom > span {
+  background-color: #fff;
+  border: 1px solid;
+  border-radius: 50%;
+  display: block;
+  height: 12px;
+  left: -6px;
+  position: absolute;
+  top: -6px;
+  width: 12px;
+  z-index: 3;
+}
+.single-resume-section-content {
+  padding-bottom: 0;
+}
+.work_customNavigation {
+  margin-bottom: 25px;
+  margin-top: 45px;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+}
+.resume-candle-icon img {
+  display: inline-block;
+  width: 60%;
+}
+.work_customNavigation {
+  bottom: 35px;
+  left: -36px;
+  margin-bottom: 0;
+  margin-top: 0;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  width: 73px;
+  z-index: 4;
+  text-align: center;
+}
+.work_customNavigation .skill-btn {
+  display: block;
+}
+
+.all-resume-bar-area {
+  overflow: hidden;
+  position: relative;
+  padding: 120px 0 50px;
+}
+.work-experience-pattern {
+  left: 0;
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 50%;
+}
+.education-experience-pattern {
+  display: block;
+  right: 0;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 50%;
+}
+.work-experience-pattern > img, 
+.education-experience-pattern > img {
+    height: auto;
+    max-width: inherit;
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+}
+#larsia-section-work .larsia-heading-left i {
+  left: -55px;
+  top: -72%;
+  z-index: 0;
+}
+.single-resume-section-heading h3 {
+  font-family: inherit;
+  font-weight: 100;
+  margin: 0;
+}
+.single-resume-section-heading h2 {
+  font-weight: 700;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+.single-resume-main-content {
+  padding-bottom: 45px;
+  padding-left: 30px;
+}
+#larsia-section-eduction .single-resume-main-content {
+  padding-bottom: 45px;
+  padding-right: 30px;
+  padding-left: 0;
+}
+#larsia-section-eduction .work_customNavigation {
+  bottom: 35px;
+  right: -39px;
+  left: inherit;
+}
+.single-resume-section-heading {
+  margin-bottom: 45px;
+}
+.work-experience-content {
+  padding-left: 40px;
+}
+.resume-candle-bar {
+  padding-right: 40px;
+}
+
+
+
+/*--------------------------------------------------------------
+  DOWNLOAD BTN AREA
+--------------------------------------------------------------*/
+.single-download-section-content,
+.single-video-section-content {
+  position: relative;
+}
+.single-download-section-content::before {
+  background: #e91e63 none repeat scroll 0 0;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.single-video-section-content::before {
+  background: none repeat scroll 0 0 #292c34;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.download-btn-area {
+  background-attachment: scroll;
+  background-image: url("images/download-bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #FFFFFF;
+}
+.larsia-download-section {
+  padding: 130px 0;
+  text-align: center;
+}
+.larsia-download-section > h2 {
+  font-family: inherit;
+  font-size: 1.7em;
+  font-weight: 700;
+  margin-top: 0;
+  display: inline-block;
+  padding-left: 20px;
+  position: relative;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.larsia-download-section > h2 i {
+  font-size: 2.5em;
+  left: -21px;
+  position: absolute;
+  top: -16px;
+}
+.larsia-download-section ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+
+/*--------------------------------------------------------------
+  AWARD WIN
+--------------------------------------------------------------*/
+.larsia-single-column.awards-win-area {
+  position: relative;
+  z-index: 3;
+}
+.award-thumb-area {
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  z-index: 1;
+}
+.award-thumb-area > img {
+  position: absolute;
+  z-index: 1;
+}
+.award-thumb-area > span {
+  background-color: rgba(255, 255, 255, 0.9);
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+.awards-area-layer {
+  background-color: rgba(255, 255, 255, 0.9);
+  display: block;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  width: 50%;
+}
+.achievement-description {
+  position: relative;
+  z-index: 2;
+}
+.all-my-achievments {
+  padding-left: 4%;
+}
+.achievement-table-cell {
+  padding-right: 45px;
+  padding-top: 30px;
+  position: relative;
+  z-index: 2;
+}
+.achievement-table-cell h2 {
+  font-weight: 700;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+.achievement-table-cell h3 {
+  font-family: inherit;
+  font-weight: 100;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.achievement-icon {
+  float: left;
+  width: 18%;
+  text-align: center;
+  margin-right: 2%;
+}
+.single-achievment {
+  overflow: hidden;
+  width: 100%;
+}
+.achiement-details > h2 {
+  font-weight: 700;
+  margin-top: 0;
+  font-size: 1.3em;
+  margin-bottom: 5px;
+}
+.achiement-details > span {
+  color: #292c34;
+  font-weight: 400;
+}
+.achiement-details > h3 {
+  font-family: inherit;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 0;
+  margin-top: 4px;
+}
+
+.achievement-icon i {
+  color: #000;
+  font-size: 4em;
+  margin-top: 7px;
+}
+.achiement-details {
+  width: 80%;
+  float: left;
+}
+.single-achievment {
+  margin: 25px 0;
+}
+.larsia-awards-content {
+  padding: 80px 0;
+}
+
+/*--------------------------------------------------------------
+  COUNTER
+--------------------------------------------------------------*/
+.counter-left {
+  float: none;
+  width: 100%;
+}
+.count-right {
+  width: 100%;
+  float: none;
+}
+.single-counter {
+  text-align: center;
+}
+.count-right h2 {
+  font-size: 3em;
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #fff;
+}
+.count-right p {
+  margin: 0;
+}
+.counter-left i {
+  margin-bottom: 11px;
+  color: rgba(0,0,0,0.4);
+  font-size: 4em;
+  transition: color 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
+  -webkit-transition: color 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
+}
+.larsia-single-column.my-activity-counter {
+  background-color: #272822;
+}
+.counter-column {
+  color: #fff;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.counter-column:nth-child(2){
+  background-color: #323232
+}
+.counter-column:nth-child(3) {
+  background-color: #3A3A3A
+}
+.single-counter:hover .counter-left i{
+  color: #000;
+}
+
+/*--------------------------------------------------------------
+  WHAT I DO
+--------------------------------------------------------------*/
+.larsia-my-serives-slide-area {
+  margin-bottom: -1px;
+}
+.larsia-my-promo-services {
+  margin-bottom: 0;
+}
+.what-i-do-heading .larsia-heading-left i {
+  left: -50px;
+}
+.my-services-slider {
+  overflow: hidden;
+}
+.promo-services-icon {
+  font-size: 5em;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #292c34;
+}
+.single-my-serices-slide-column {
+  background-color: #272822;
+  color: #fff;
+}
+.single-item-services > h2 {
+  font-size: 1.6em;
+  font-weight: 700;
+  margin-top: 0;
+  letter-spacing: 1px;
+}
+.single-my-serices-slide-column {
+  position:relative;
+}
+.larsia-my-serives-slide-area .owl-theme .owl-controls .owl-buttons i {
+  font-size: 24px;
+  line-height: 1;
+  margin-bottom: 0;
+}
+.larsia-my-serives-slide-area .owl-theme .owl-controls .owl-buttons div {
+  background: none repeat scroll 0 0 transparent;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  color: #fff;
+  display: inline-block;
+  line-height: 1;
+  margin: 5px;
+  opacity: 0.5;
+  padding: 3px 10px;
+}
+.larsia-my-serives-slide-area .owl-theme .owl-controls {
+  margin-top: 10px;
+  text-align: left;
+}
+.my-services-slider.owl-carousel.owl-theme {
+  padding-bottom: 60px;
+  padding-left: 10%;
+  padding-top: 60px;
+  overflow: hidden;
+}
+.slider-container {
+  position: relative;
+  z-index: 1;
+}
+.right-image-slide-thumb {
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  z-index: 3;
+}
+.left-image-slide-thumb {
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  z-index: 3;
+}
+.promo-services-description h2 {
+  color: #111;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+.single-service-promo {
+  background: none repeat scroll 0 0 #f5f5f5;
+  color: #777;
+  font-weight: 100;
+  margin: 30px 0 0;
+  padding: 40px 20px;
+  position: relative;
+  text-align: center;
+  transition: background-color 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
+  -webkit-transition: background-color 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
+}
+.single-service-promo:hover {
+  background-color: #E91E63;
+  color: #FFFFFF;
+}
+.single-service-promo:hover .promo-services-icon {
+  color: #FFFFFF;
+}
+.single-service-promo:hover .promo-services-description h2 {
+  color: #FFFFFF;
+}
+.promo-services-description > p {
+  font-size: 15px;
+}
+.more-service-btn {
+  margin-top: 65px;
+}
+.single-item-services {
+  padding-right: 30px;
+}
+
+
+
+
+/*--------------------------------------------------------------
+  PROMO AREA
+--------------------------------------------------------------*/
+.larsia-single-column.promo-portfolio-page {
+  background-image: url("images/promo-bg.html");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 50px 0;
+}
+.promo-description {
+  color: #FFF;
+}
+.promo-description  h2 {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.promo-thumb img {
+  width: 160px;
+}
+.promo-table-area {
+  margin-top: 87px;
+  padding-left: 15%;
+}
+
+
+/*--------------------------------------------------------------
+  MY PORTFOLIO - PORTFOLIO
+--------------------------------------------------------------*/
+.single-portfolio-section-content .larsia-heading-left i {
+  left: -40px;
+}
+.larsia-portfolio-nav li {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.9em;
+  font-weight: 100;
+  line-height: 1;
+  margin: 0 5px;
+  padding: 10px 15px;
+  position: relative;
+  text-transform: uppercase;
+}
+.larsia-portfolio-nav {
+  text-align: center;
+  width: 100%;
+}
+.my-works-category {
+  margin-bottom: 45px;
+  overflow: hidden;
+  width: 100%;
+}
+.larsia-portfolio-nav li span {
+  display: block;
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
+
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.larsia-portfolio-nav li::before {
+  background-color: #292c34;
+  bottom: 0;
+  color: #FFF;
+  content: attr(data-hover);
+  display: block;
+  height: 101%;
+  left: 0;
+  padding: 10px 15px;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  transform: translateY(103%);
+  -webkit-transform: translateY(103%);
+  -moz-transform: translateY(103%);
+  -ms-transform: translateY(103%);
+  -o-transform: translateY(103%);
+  width: 100%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.larsia-portfolio-nav li.selected::before {
+  transform: translateY(0%);
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+}
+.larsia-portfolio-nav li:hover span {
+  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+}
+.larsia-portfolio-nav li:hover::before {
+  transform: translateY(0%);
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+}
+#filters {
+  margin: 0;
+  padding: 0;
+}
+.single-works-column {
+  text-align: center;
+}
+.single-works-column a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+.filter-bottom > h2 {
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+.filter-bottom > p {
+  font-size: 0.9em;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.filter-bottom {
+  background-color: rgba(255,255,255,0.8);
+  border-bottom: 1px solid #ccc;
+  bottom: -100%;
+  overflow: hidden;
+  padding: 20px 0 25px;
+  position: absolute;
+  width: 100%;
+  color: #292c34;
+  -webkit-transition-property: bottom;
+  transition-property: bottom;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+  -webkit-transition-timing-function: cubic-bezier(.75, 0, .125, 1);
+  transition-timing-function: cubic-bezier(.75, 0, .125, 1);
+  -webkit-transition-delay: .3s;
+  transition-delay: .3s
+}
+
+.filter-bottom h2 ,
+.filter-bottom p {
+  position: relative;
+  z-index: 1;
+}
+
+.single-works-column a img {
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.9s;
+  transition-duration: 0.9s;
+  -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.single-works-column a:hover img {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+.single-works-column a:hover .filter-bottom{
+  bottom: 0;
+}
+.single-works-column a:hover .filter-before{
+  color: #FFFFFF;
+  transform: translateY(0%);
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+}
+.single-works-details.white-popup {
+  background-color: #fff;
+  margin: auto;
+  max-width: 600px;
+  width: 100%;
+}
+.work-content-body {
+  padding: 0 25px 15px;
+}
+.work-bottom-body {
+  background-color: #000;
+  color: #fff;
+  padding: 15px 25px;
+  width: 100%;
+}
+.work-thumb-top {
+  position: relative;
+}
+.work-bottom-body .btn-text {
+  padding: 12px 0;
+  text-align: center;
+  width: 100px;
+}
+.button-live-demo .btn-text {
+  padding: 12px 0;
+  text-align: center;
+  width: 160px;
+}
+.work-bottom-body .btn-text::after,
+.button-live-demo .btn-text::after{
+  padding: 12px 0;
+  text-align: center;
+}
+.work-bottom-body .btn-icon,
+.work-bottom-body  .btn-icon::after,
+.button-live-demo .btn-icon,
+.button-live-demo  .btn-icon::after{
+  padding: 12px 17px;
+}
+.work-bottom-body .larsia-btn{
+  font-weight: 100;
+  line-height: 1;
+  font-size: .85em;
+  margin-right: 20px;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+.button-live-demo .larsia-btn {
+  font-weight: 100;
+  line-height: 1;
+  font-size: .85em;
+  text-transform: uppercase;
+}
+.work-bottom-body .larsia-btn:last-child {
+  margin-right: 0;
+}
+.button-live-demo {
+  bottom: 4px;
+  color: #000;
+  position: absolute;
+  right: 2%;
+  text-align: center;
+}
+.mfp-close {
+  display: none !important;
+}
+
+
+/*--------------------------------------------------------------
+  VIDEO
+--------------------------------------------------------------*/
+.larsia-single-column.promo-video-page {
+  background-image: url(images/video-bg.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.popup-vimeo {
+  display: inline-block;
+  margin: auto;
+  width: 320px;
+  color: #FFF;
+}
+.popup-vimeo:hover {
+  color: #FFFFFF;
+}
+.video-popup-area {
+  height: 460px;
+  display: table;
+  width: 100%;
+}
+.video-table-cell {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.popup-vimeo > img {
+  display: block;
+  margin: auto;
+  width: auto;
+}
+.popup-vimeo > h3 {
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: 100;
+  margin: 0;
+}
+
+/*--------------------------------------------------------------
+  TESTIMONIAL
+--------------------------------------------------------------*/
+#larsia-section-testimonial {
+  margin-top: 100px;
+}
+.single-clients-logo {
+  text-align: center;
+  padding: 35px 0;
+  border-left: 1px solid #ccc;
+  cursor: pointer;
+}
+.owl-item:last-child .single-clients-logo {
+  border-right: 1px solid #ccc;
+}
+.single-clients-logo > img {
+  display: inline-block;
+  width: 60%;
+}
+.testimonial-client-logos {
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+.testimonial-area-main {
+  background-image: url("images/faces.jpg");
+  background-size: 50% auto;
+  position: relative;
+}
+.testimonial-area-main::before {
+  background-color: rgba(255, 255, 255, 0.92);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.testimonial-slide-left {
+  float: left;
+  margin-right: 8%;
+  width: 45%;
+}
+.testimonial-slide-right-main blockquote::before {
+  content: "\f10d";
+  font-family: 'fontawesome';
+  font-size: 3em;
+  left: -60px;
+  position: absolute;
+  top: 0;
+}
+.testimonial-slide-right-main blockquote {
+  border: 0 none;
+  font-size: 0.9em;
+  font-weight: 400;
+  line-height: 1.7;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 10px;
+  position: relative;
+}
+.quoter-details h2 {
+  color: #e91e63;
+  font-size: 1.2em;
+  font-style: italic;
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-align: right;
+}
+.quoter-details p {
+  font-size: 0.9em;
+  margin-top: 0;
+  text-align: right;
+}
+.quoter-details {
+  padding-right: 19px;
+}
+.single-testimonial-item {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  padding-top: 40px;
+}
+.testimonial-slide-right-main {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 40%;
+}
+
+
+/*--------------------------------------------------------------
+  MY BLOG POSTS
+--------------------------------------------------------------*/
+.single-blog-section-content .larsia-heading-left i {
+  left: -30px;
+}
+.single-blog-promo a {
+  display: block;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+}
+.fetured-blog-heading {
+  text-align: center;
+  color: #ffffff;
+}
+.fetured-blog-heading h2 {
+  font-size: 1.3em;
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+.fetured-blog-heading p {
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+.single-blog-promo img {
+  display: block;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+
+ -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.fetured-blog-heading {
+  background-color: rgba(0,0,0,0.7);
+  bottom: 0;
+  margin: auto;
+  padding: 20px 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+  transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.single-blog-promo span {
+  background-color: #272822;
+  border-radius: 0 0 3px 3px;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 800;
+  left: 10px;
+  padding: 10px 15px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 0;
+}
+.single-blog-promo a:hover img {
+    transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+}
+.single-blog-promo a:hover span {
+  transform: translateY(0%);
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+}
+.single-blog-promo a:hover .fetured-blog-heading {
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+}
+#larsia-section-blog .work_customNavigation {
+  bottom: 0;
+  left: 0;
+  margin-bottom: 0;
+  margin-top: 30px;
+  overflow: inherit;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+}
+#larsia-section-blog .work_customNavigation .skill-btn {
+  display: inline-block;
+}
+.blog_pagination {
+  position: relative;
+}
+.blog_pagination .skill-btn {
+  margin: 0 100px;
+  padding: 3px 23px 6px;
+  font-size: 2.5em;
+}
+.blog_pagination .larsia-btn {
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  -webklt-transform: translateX(-50%);
+  padding: 10.8px 34px;
+}
+
+/*--------------------------------------------------------------
+  CONTACT FORM
+--------------------------------------------------------------*/
+.contact-section-content .larsia-heading-left i {
+  color: #e9e9e9;
+  font-size: 13em;
+  left: -43px;
+  position: absolute;
+  top: -67%;
+  z-index: -1;
+}
+.contact-area-top {
+  background-color: #f3f5f8;
+  padding: 110px 0;
+  text-align: center;
+}
+.single-contact-icon i {
+  font-size: 2.5em;
+  line-height: 1;
+}
+.single-contact-icon {
+  border-right: 1px solid #d5d5d5;
+  float: left;
+  margin: 0;
+  padding: 20px 0;
+  width: 35%;
+}
+.single-contact-info {
+  float: right;
+  padding-left: 5%;
+  text-align: left;
+  width: 60%;
+}
+.single-contact-info > h3 {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 16px;
+  text-transform: uppercase;
+}
+.contact-area-top p {
+  color: #292c34;
+  display: block;
+  margin-top: 7px;
+}
+.success,
+.error {
+  display: none;
+}
+.single_contact_column input,
+.single_contact_column textarea {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  color: #292c34;
+  padding: 12px 10px;
+  width: 100%;
+  transition: all 0.2s cubic-bezier(0, 0, 0.58, 1) 0s;
+  -webkit-transition: all 0.2s cubic-bezier(0, 0, 0.58, 1) 0s;
+}
+.single_contact_column textarea {
+  height: 200px;
+}
+.submit-button-man .larsia-btn {
+  text-align: center;
+}
+.submit-button-man {
+  float: left;
+  margin-right: 30px;
+  position: relative;
+}
+.contact-form-pattern {
+  display: block;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 50%;
+}
+
+#larsia_google_map {
+  width: 100%;
+  height: 400px;
+}
+.larsia-google-map-section {
+  overflow: hidden;
+  position: relative;
+}
+.map-overley {
+  background: none repeat scroll 0 0 rgba(20, 20, 20, 0.9);
+  top: 0;
+  cursor: pointer;
+  height: 100%;
+  left: 0;
+  padding: 0 !important;
+  position: absolute;
+  transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1) 0s;
+  -webkit-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1) 0s;
+  width: 100%;
+  z-index: 2;
+}
+.contact-area-main {
+  position: relative;
+}
+.map-table-cell i {
+  font-size: 4em;
+}
+.map-table-cell {
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  top: 37%;
+  width: 100%;
+}
+.map-overley.map_pattern .icon_cell {
+  display: none;
+}
+.map-overley.map_pattern {
+  height: 12%;
+}
+.map-overley.map_pattern .map-table-cell {
+  top: 25%;
+}
+#larsia-section-contact {
+  position: relative;
+  z-index: 1;
+}
+#larsia_google_map img{
+  max-width: inherit;
+}
+.larsia-main-contact-form-section {
+  float: right;
+}
+.close-pop.google-map-close {
+  background-color: #000;
+  color: #ffffff;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  cursor: pointer;
+  opacity: .7;
+}
+.close-pop.google-map-close i {
+  font-size: 2em;
+  padding: 12px 20px;
+}
+.close-pop.google-map-close:hover {
+  opacity: 1
+}
+#mail_success,
+#mail_fail {
+  display: none;
+}
+.larsia-contact-form-main-body,
+.contact-alert-message {
+  width: 100%;
+  overflow: hidden;
+}
+.single_contact_column {
+  position: relative;
+  margin-bottom: 20px;
+}
+.single_contact_column::before {
+  font-family: 'fontawesome';
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -o-animation: flash 3s ease 0s backwards;
+  -ms-animation: flash 3s ease 0s backwards;
+  -moz-animation: flash 3s ease 0s backwards;
+  -webkit-animation: flash 3s ease 0s backwards;
+  animation: flash 3s ease 0s backwards;
+}
+.single_contact_column.filed_error input,
+.single_contact_column.filed_error textarea {
+  border: 1px solid #ff0000;
+}
+.single_contact_column.filed_error input:focus,
+.single_contact_column.filed_error textarea:focus {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 0, 0, 0.6);
+  border-color: #ff0000;
+}
+
+.single_contact_column.filed_error::before {
+  color: #ff0000;
+  content: "\f071";
+}
+.single_contact_column.filed_ok::before {
+  color: #2eb267;
+  content: "\f058";
+}
+.contact-alert-message {
+  padding: 10px 0 25px;
+  text-align: center;
+}
+#mail_fail i {
+  color: #ff0000;
+  -o-animation: flash 3s ease 0s backwards;
+  -ms-animation: flash 3s ease 0s backwards;
+  -moz-animation: flash 3s ease 0s backwards;
+  -webkit-animation: flash 3s ease 0s backwards;
+  animation: flash 3s ease 0s backwards;
+}
+#mail_success i {
+  color: #2eb267;
+  -o-animation: flash 3s ease 0s backwards;
+  -ms-animation: flash 3s ease 0s backwards;
+  -moz-animation: flash 3s ease 0s backwards;
+  -webkit-animation: flash 3s ease 0s backwards;
+  animation: flash 3s ease 0s backwards;
+}
+@-webkit-keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+@keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+
+  25%, 75% {
+    opacity: 0;
+  }
+}
+.flash {
+  -webkit-animation-name: flash;
+          animation-name: flash;
+}
+.larsia-contact-form-area {
+  padding: 90px 0 140px 25px;
+}
+.single_contact_column input:focus,
+.single_contact_column textarea:focus {
+  border: 1px solid #000;
+}
+.cotact-heading > h2 {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 35px;
+  margin-top: 0;
+  padding-bottom: 19px;
+  position: relative;
+  text-transform: uppercase;
+}
+.cotact-heading > h2::before {
+  background-color: #d5d5d5;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+  width: 100px;
+}
+.cotact-heading {
+  margin-bottom: 40px;
+}
+.cotact-heading > p {
+  line-height: 1.7;
+}
+
+
+/*--------------------------------------------------------------
+  FOLLOW ME AREA
+--------------------------------------------------------------*/
+.follow-me-area {
+  background-image: url("images/follow-me.html");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: scroll;
+}
+.larsia-follow-me-section {
+  color: #fff;
+  padding: 130px 0;
+  text-align: center;
+}
+.larsia-follow-me-section > h2 {
+  font-family: inherit;
+  font-size: 2em;
+  font-weight: 100;
+  letter-spacing: 10px;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+.larsia-follow-me-section ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+.larsia-follow-me-section ul li a {
+  display: block;
+  font-size: 1.5em;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.larsia-follow-me-section ul li a span {
+  display: block;
+  font-size: 0.8em;
+  opacity: 0;
+  margin-top: 6px;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+
+}
+.larsia-follow-me-section ul li a:hover {
+  color: #000;
+}
+.larsia-follow-me-section ul li a:hover span {
+  opacity: 1;
+}
+.larsia-external-port-container {
+  margin-bottom: 35px;
+  margin-top: 20px;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+}
+.larsia-external-port-container > .container > h2 {
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.larsia-external-portfolio-section {
+  color: #fff;
+}
+.single-expternal-portfolo {
+  padding-bottom: 35px;
+  padding-top: 35px;
+  display: block;
+  position: relative;
+}
+.single-expternal-portfolo i,
+.single-expternal-portfolo h3 {
+  position: relative;
+  z-index: 2;
+}
+.single-expternal-portfolo.dribble_portfolio {
+  background-color: #f26798;
+}
+.single-expternal-portfolo.stackoverflow_portfolio {
+  background-color: #444444;
+}
+.single-expternal-portfolo.behance_portfolio {
+  background-color: #176bfe;
+}
+.single-expternal-portfolo.flickr_portfolio {
+  background-color: #ff0084;
+}
+.single-expternal-portfolo::before {
+  background: none repeat scroll 0 0 rgba(0,0,0,0.3);
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: scale(0);
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+  -webkit-transform: scale(0);
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  z-index: 0;
+}
+.about-me-content > span {
+  background-color: #f5f5f5;
+  bottom: 0;
+  display: block;
+  height: 150px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+.single-expternal-portfolo:hover::before {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.single-expternal-portfolo > h3 {
+  font-family: inherit;
+  font-size: 1.1em;
+  font-weight: 100;
+  margin-top: 10px;
+  text-transform: capitalize;
+}
+.single-expternal-portfolo i {
+  font-size: 2em;
+}
+.follow-me-social-links a {
+  background-color: #4d4c4a;
+  color: #fff;
+  display: block;
+  height: 42px;
+  line-height: 42px;
+  width: 42px;
+}
+.follow-me-social-links a:hover {
+  background-color: #000;
+}
+.follow-me-social-links li {
+  display: inline-block;
+}
+.author-footer-descrip h2 {
+  font-family: inherit;
+  font-size: 1.5em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.author-footer-descrip {
+  margin-bottom: 25px;
+}
+.author-footer-short {
+  background-color: #f3f5f8;
+  border-top: 1px solid #f5f5f5;
+  padding-bottom: 60px;
+  position: relative;
+}
+.profile-thumb-footer {
+  background-color: #fff;
+  border: 1px solid #f5f5f5;
+  margin: -65px auto 0;
+  overflow: hidden;
+  padding: 12px;
+  width: 140px;
+}
+/*--------------------------------------------------------------
+  MAIN FOOTER
+--------------------------------------------------------------*/
+#larsia-section-footer {
+  position: relative;
+  z-index: 2;
+}
+.larsia-footer {
+  background-color: #4d4c4a;
+  color: #fff;
+  padding: 45px 0;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+.larsia-footer-content h2 {
+  display: block;
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 0.8;
+  margin: 0 0 10px;
+  padding-right: 25px;
+  text-transform: uppercase;
+}
+
+.larsia-footer-content p {
+  display: block;
+  font-size: 0.9em;
+  margin: 0;
+  text-transform: uppercase;
+}
+.larsia-footer::after {
+  bottom: 17px;
+  color: #888888;
+  content: "\f18c";
+  font-family: 'fontawesome';
+  font-size: 10em;
+  position: absolute;
+  right: -25px;
+}
+.larsia-page-bottom-section {
+  margin-bottom: -1px;
+}
+.contact-form-pattern .resume-table-cell > h2 {
+  position: relative;
+}
+.contact-form-pattern .resume-table-cell > h2::before {
+  color: white;
+  content: "\f1d9";
+  font-family: "fontawesome";
+  font-size: 2em;
+  left: 50%;
+  position: absolute;
+  top: -121px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+/*--------------------------------------------------------------
+  BACK TO TOP
+--------------------------------------------------------------*/
+#backToTop > a {
+  background-color: #000;
+  border-radius: 3px;
+  bottom: 25px;
+  color: #fff;
+  display: inline-block;
+  font-size: 2em;
+  padding: 12px 15px;
+  position: fixed;
+  display: none;
+  right: 50px;
+  z-index: 99998;
+}
+#backToTop > a.displayOk {
+  display: inline-block;
+}
+#backToTop > a:hover {
+  background-color: #292c34;
+}
+.mfp-wrap {  z-index: 99999;
+}
+.work-experience-pattern span, 
+.education-experience-pattern span,
+.contact-form-pattern span {
+  background-color: rgba(20, 20, 20, 0.9);
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.resume-table-cell h2 {
+  font-size: 3em;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  z-index: 2;
+}
+.resume-div-cell {
+  display: table;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+.resume-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+.style-first-content.style-inner-content h2 {
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 0.8;
+  margin: 0;
+  text-transform: uppercase;
+}
+.style-first-content.style-inner-content ul {
+  margin-top: 8px;
+  width: 100%;
+}
+
+.style-first-content .btn-text {
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+  border-top: 1px solid;
+  display: inline-block;
+  height: 100%;
+  margin: 0 -4px 0 0;
+  overflow: hidden;
+  padding: 14px 0;
+  position: relative;
+  width: 180px;
+}
+
+.services_promo {
+  margin-top: 130px;
+  overflow: hidden;
+}
+
+.single-get-service-section-content {
+  position: relative;
+}
+#larsia-section-work-get  {
+  position: relative;
+}
+.single-get-works-section-content::before {
+  background: #e91e63 none repeat scroll 0 0;
+  content: "";
+  display: block;
+  opacity: 0.9;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.single-get-service-section-content::before {
+  background: rgba(20,20,20,0.9) none repeat scroll 0 0;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.get-my-service-if-you-need{
+  padding: 120px 0;
+  position: relative;
+  text-align: center;
+}
+.get-my-service-if-you-need > h3 {
+  font-family: inherit;
+  font-size: 1.6em;
+  font-weight: 100;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.get-my-service-if-you-need > h2 {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-top: 12px;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+.get-my-service-if-you-need > p {
+  line-height: 1.7;
+  margin: auto;
+  width: 60%;
+}
+.get-my-service-if-you-need li {
+  display: inline-block;
+}
+.get-my-service-if-you-need > ul {
+  margin-top: 55px;
+}
+
+.get-service-content{
+  background-attachment: scroll;
+  background-image: url("images/hill.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+.get-works-content {
+  background-attachment: scroll;
+  background-image: url("images/start_work.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+.get-my-works-if-you-need {
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+}
+.get-work-text h2 {
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+.get-work-text h3 {
+  font-family: inherit;
+  font-size: 1.1em;
+  font-weight: 100;
+  margin-top: 12px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.get-work-button ul {
+  margin-top: 8px;
+}
+.about-pattern img {
+  height: 100%;
+  max-width: inherit;
+}

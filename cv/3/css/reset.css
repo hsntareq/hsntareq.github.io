@@ -1,0 +1,297 @@
+body,
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #292c34;
+    line-height: 24px;
+    font-weight: 300
+}
+body {
+  overflow-y: scroll;
+}
+a,
+a:focus,
+a:hover {
+    color: inherit
+}
+a,
+a:active,
+a:focus,
+a:hover,
+a:visited {
+    text-decoration: none;
+    outline: 0
+}
+:focus {
+    outline: 0
+}
+img {
+    border: none;
+    max-width: 100%;
+    width: 100%;
+    height: auto
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+.full-container {
+  width: 100%;
+}
+.aligncenter {
+    text-align: center
+}
+.alignleft {
+    text-align: left
+}
+.alignright {
+    text-align: right
+}
+.positionRelative {
+    position: relative
+}
+.larsia-btn {
+  background: #e91e63 none repeat scroll 0 0;
+  border: 2px solid transparent;
+  border-radius: 0;
+  box-sizing: border-box;
+  color: #fff;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding: 10px 34px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s cubic-bezier(0, 0, 0.58, 1) 0s;
+  -webkit-transition: all 0.2s cubic-bezier(0, 0, 0.58, 1) 0s;
+  position: relative;
+}
+.larsia-border-btn {
+  background: #e5e5e5 none repeat scroll 0 0;
+  border: 2px solid transparent;
+  border-radius: 0;
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding: 10px 34px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s cubic-bezier(0, 0, 0.58, 1) 0s;
+  -webkit-transition: all 0.2s cubic-bezier(0, 0, 0.58, 1) 0s;
+  position: relative;
+}
+.larsia-btn-bg.larsia-btn {
+  color: #292c34;
+  background-color: #FFFFFF;
+}
+.larsia-btn-bg-2.larsia-btn {
+  color: #FFFFFF;
+  background-color: #292c34;
+}
+.larsia-btn:hover,
+.larsia-btn:focus {
+  background: #e91e63 none repeat scroll 0 0;
+  color: #fff;
+  opacity: 0.85 !important;
+}
+.larsia-btn-bg.larsia-btn:hover,
+.larsia-btn-bg.larsia-btn:focus {
+  background: #FFFFFF none repeat scroll 0 0;
+  color: #292c34;
+  opacity: 0.85 !important;
+}
+.larsia-btn-bg-2.larsia-btn:hover,
+.larsia-btn-bg-2.larsia-btn:focus {
+  background: #292c34 none repeat scroll 0 0;
+  color: #FFFFFF;
+  opacity: 0.85 !important;
+}
+.larsia-border-btn:hover,
+.larsia-border-btn:focus {
+  background: #d5d5d5 none repeat scroll 0 0;
+  opacity: 0.85 !important;
+}
+
+.btn-bg-white {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 0;
+  box-sizing: border-box;
+  color: #fff;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding: 10px 34px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s cubic-bezier(0, 0, 0.58, 1) 0s;
+  -webkit-transition: all 0.2s cubic-bezier(0, 0, 0.58, 1) 0s;
+  position: relative;
+}
+.larsia-download-section ul li a {
+  padding-left: 0;
+  padding-right: 0;
+  width: 250px;
+}
+.btn-bg-white:hover,
+.btn-bg-white:focus {
+  color: #292c34;
+  background-color: #FFFFFF;
+  opacity: 0.85 !important;
+}
+.larsia-btn.btn-bg-white::hover,
+.larsia-btn.btn-bg-white::focus {
+  background-color: #FFFFFF;
+  color: inherit;
+  opacity: 0.85 !important;
+}
+
+/*--------------------------------------------------------------
+  Typography
+--------------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: normal;
+}
+
+
+/*==============================================================================
+// Section Setup
+==============================================================================*/
+.welcome-full {
+  overflow: hidden;
+}
+.larsia-pages-area {
+  background-color: #FFFFFF;
+}
+.larsia-single-page-content {
+  overflow: hidden;
+}
+.pages .content.show {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+/*--------------------------------------------------------------
+  Section Title
+--------------------------------------------------------------*/
+.single-larsia-section-heading {
+  overflow: hidden;
+  width: 100%;
+}
+.larsia-heading-left {
+  float: left;
+  margin-right: 10%;
+  position: relative;
+  text-align: right;
+  width: 22%;
+}
+.larsia-heading-left::before {
+  background-color: #777;
+  content: "";
+  display: block;
+  height: 160px;
+  margin-top: -80px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 1px;
+}
+.larsia-heading-left::after {
+  background-color: #fff;
+  content: "";
+  display: block;
+  height: 250px;
+  left: -100px;
+  position: absolute;
+  top: -87px;
+  width: 100px;
+  z-index: 2;
+}
+.larsia-heading-left i {
+  color: #e9e9e9;
+  font-size: 13em;
+  left: 0;
+  position: absolute;
+  top: -83%;
+  z-index: -1;
+}
+.larsia-heading-right {
+  float: left;
+  width: 60%;
+}
+.heading-title {
+  position: relative;
+  z-index: 2;
+  text-align: left;
+}
+.heading-title > h2 {
+  border: 1px solid;
+  display: inline-block;
+  font-family: inherit;
+  font-size: 1.6em;
+  font-weight: 900;
+  margin: 0;
+  padding: 15px;
+  text-align: right;
+  text-transform: uppercase;
+}
+.larsia-heading-right > p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin: 0;
+}
+.single-larsia-section-heading {
+  overflow: hidden;
+  padding-bottom: 120px;
+  padding-top: 150px;
+  width: 100%;
+}
+.larsia-single-column {
+    width: 100%;
+    overflow: hidden;
+}
+.js .img-dragger-large .slide.single-slide-banner h2 {
+  bottom: 22%;
+}
+.banner-icon {
+  bottom: 39%;
+  color: #fff;
+  font-size: 4em;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}
+.larsia-other-page-content {
+  margin-top: 150px;
+  padding-top: 50px;
+}
+.resume-page-content .larsia-other-page-content {
+  margin-top: 80px;
+}
+.larsia_default_preloader {
+  background-color: #fff;
+  background-image: url("../images/preloader.gif");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 64px auto;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999999;
+}
